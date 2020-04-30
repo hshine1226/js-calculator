@@ -44,8 +44,8 @@ body main {
 }
 
 body main .caculator {
-  width: 80%;
-  height: 50%;
+  width: 25%;
+  height: 60%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -91,4 +91,10 @@ body main .caculator button {
   border: none;
   margin: 5px 5px;
   font-size: 20px;
+}
+
+body main .caculator button:focus {
+  outline-style: solid;
+  outline-color: #9b59b6;
+  outline-width: 2px;
 }
