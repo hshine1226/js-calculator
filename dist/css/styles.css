@@ -1,0 +1,94 @@
+body {
+  background-color: #bdc3c7;
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body header {
+  margin-top: 10%;
+}
+
+body header h1 {
+  font-size: 40px;
+  color: #34495e;
+  font-weight: 600;
+}
+
+body main {
+  width: 100%;
+  height: 50%;
+  background-color: #2c3e50;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .caculator {
+  width: 80%;
+  height: 50%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
+}
+
+body main .caculator input {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / 4;
+  background-color: transparent;
+  border: none;
+  text-align: end;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  padding-right: 10px;
+}
+
+body main .caculator #b-0 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+}
+
+body main .caculator #b-reset {
+  background-color: #3498db;
+}
+
+body main .caculator #b-plus,
+body main .caculator #b-minus,
+body main .caculator #b-multi,
+body main .caculator #b-div {
+  background-color: #e67e22;
+}
+
+body main .caculator button {
+  background-color: #bdc3c7;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  margin: 5px 5px;
+  font-size: 20px;
+}
